@@ -7,4 +7,6 @@
     <string name="btn_login">Iniciar</string>
     <string name="txt_register_login">Primeira vez aqui?</string>
     <string name="register_login">Cadastrar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">Confirmar</string>
 </resources>

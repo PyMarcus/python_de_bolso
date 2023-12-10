@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado quando o campo de texto não está focado -->
+    <item android:state_focused="false" android:color="@color/blue" />
+    <!-- Estado padrão quando o campo de texto está focado -->
+    <item android:color="@color/blue" />
+</selector>

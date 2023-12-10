@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme">
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- texts-->
+    <style name="startTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="slogan" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/italic</item>
+    </style>
+
+    <style name="MyTextInputEditTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="boxStrokeColor">@color/blue</item>
+        <item name="android:textColorHint">@color/blue</item>
+    </style>
+</resources>

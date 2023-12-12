@@ -13,6 +13,20 @@
         android:theme="@style/Theme.PythonDeBolso"
         tools:targetApi="31">
         <activity
+            android:name=".ZenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:label="@string/title_activity_about"
+            android:theme="@style/Theme.PythonDeBolso.NoActionBar" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity

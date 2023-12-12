@@ -1,12 +1,41 @@
 <resources>
+    <!--Base-->
     <string name="app_name">Python De Bolso</string>
     <string name="slogan">A revolução Python</string>
     <string name="slogan2">agora cabe no seu bolso!</string>
+    <string name="welcome">Bem vindo(a)!</string>
+
+    <!--login e registers-->
     <string name="email_login">E-mail</string>
     <string name="password_login">Password</string>
     <string name="btn_login">Iniciar</string>
+    <string name="btn_register">Cadastrar</string>
     <string name="txt_register_login">Primeira vez aqui?</string>
+    <string name="txt_login_login">Ja possui cadastro?</string>
+    <string name="login_login">Entrar</string>
     <string name="register_login">Cadastrar</string>
     <string name="cancel">Cancelar</string>
     <string name="ok">Confirmar</string>
+
+    <!--main menu-->
+    <string name="about">Sobre</string>
+    <string name="zen">Zen do python</string>
+    <string name="learn">Aprender</string>
+    <string name="pratice">Praticar</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!--about page-->
+    <string name="title_about">A Linguagem Python</string>
+    <string name="text_about">O Python é uma linguagem de programação fácil de aprender e poderosa.
+        Ele possui estruturas de dados eficientes em nível superior e uma abordagem simples,
+        mas eficaz,para a programação orientada a objetos. A sintaxe elegante e a tipagem
+        dinâmica do Python,juntamente com sua natureza interpretada, tornam-no uma linguagem
+        ideal para script e desenvolvimento rápido de aplicativos em várias áreas e
+        plataformas.</string>
+
+    <!--zen page-->
+    <string name="zen_text">O Zen of Python é uma coleção de 19 aforismos para escrever programas
+        de computadores que influenciam o design de programas em Python.</string>
 </resources>

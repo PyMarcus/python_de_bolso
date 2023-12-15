@@ -56,7 +56,15 @@ class MainMenuActivity : AppCompatActivity(), OnClickListener {
         )
     }
 
-    private fun learn(){}
+    private fun learn(){
+        val learnIntent = Intent(this, LearnActivity::class.java)
+
+        startActivity(learnIntent)
+        overridePendingTransition(
+            R.anim.fade_enter,
+            R.anim.fate_exit
+        )
+    }
 
     private fun pratice(){}
 }

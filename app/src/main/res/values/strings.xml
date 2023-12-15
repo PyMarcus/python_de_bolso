@@ -38,4 +38,6 @@
     <!--zen page-->
     <string name="zen_text">O Zen of Python é uma coleção de 19 aforismos para escrever programas
         de computadores que influenciam o design de programas em Python.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

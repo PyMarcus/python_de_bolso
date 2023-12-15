@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_menu_background">
+    android:background="@drawable/general_background">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/dash_title"
@@ -41,7 +41,7 @@
         android:columnCount="2"
         android:rowCount="2"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="240dp"
         android:layout_marginBottom="16dp">
 
         <!-- Item 1 Card -->

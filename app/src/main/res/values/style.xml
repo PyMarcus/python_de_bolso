@@ -30,4 +30,8 @@
         <item name="android:layout_gravity">fill</item>
     </style>
 
+    <style name="BottomNavigationView.TextAppearance" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/color_selector</item>
+    </style>
+
 </resources>

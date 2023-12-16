@@ -3,12 +3,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/main_menu_background"
     tools:context=".LearnProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_learn"
+        android:background="@color/orange"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Acompanhe seu progresso!"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:adjustViewBounds="true"
+        android:fontFamily="@font/bold"
+        android:layout_marginStart="0dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/icon_3"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/circularProgressbar"
+        android:progressTint="@color/orange"
+        android:secondaryProgressTint="@color/orange"
+        android:indeterminateTint="@color/white"
+        android:progressBackgroundTint="@color/white"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:layout_gravity="center"
+        android:max="100"
+        android:progress="20"
+        android:secondaryProgress="100" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:gravity="center"
+        android:id="@+id/percent"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:adjustViewBounds="true"
+        android:fontFamily="@font/bold"
+        android:layout_marginStart="0dp"
+        tools:ignore="MissingConstraints" />
 
 </FrameLayout>

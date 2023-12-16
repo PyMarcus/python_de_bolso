@@ -4,6 +4,8 @@
     <string name="slogan">A revolução Python</string>
     <string name="slogan2">agora cabe no seu bolso!</string>
     <string name="welcome">Bem vindo(a)!</string>
+    <string name="exp">Explicação:</string>
+
 
     <!--login e registers-->
     <string name="email_login">E-mail</string>
@@ -38,6 +40,19 @@
     <!--zen page-->
     <string name="zen_text">O Zen of Python é uma coleção de 19 aforismos para escrever programas
         de computadores que influenciam o design de programas em Python.</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--io page-->
+    <string name="io_title">Entradas e saídas</string>
+    <string name="io_text">Entradas e saídas (I/O, do inglês Input/Output) referem-se à comunicação
+        entre um programa de computador e o ambiente externo, que pode incluir dispositivos de
+        entrada, saída de dados, arquivos, redes, etc. Esses conceitos são fundamentais na
+        programação, pois os programas frequentemente precisam interagir com o mundo externo
+        para serem úteis.</string>
+
+
+
+
+
 </resources>

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PythonDeBolso"
         tools:targetApi="31">
         <activity
+            android:name=".IOActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LearnActivity"
+            android:exported="false" />
+        <activity
             android:name=".ZenActivity"
             android:exported="false" />
         <activity

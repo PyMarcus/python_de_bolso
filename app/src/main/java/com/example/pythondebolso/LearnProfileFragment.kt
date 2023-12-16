@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
+import com.example.pythondebolso.controllers.LearnPercentController
+import com.example.pythondebolso.databinding.FragmentLearnProfileBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,6 +23,8 @@ class LearnProfileFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var binding: FragmentLearnProfileBinding
+    private lateinit var profileController: LearnPercentController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,9 +38,27 @@ class LearnProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_learn_profile, container, false)
+        binding = FragmentLearnProfileBinding.inflate(inflater, container, false)
+        val progressBar = container?.findViewById<ProgressBar>(R.id.circularProgressbar)
+        if(container?.context != null){
+            profileController = LearnPercentController(container.context)
+            binding.percent.text = "${profileController.getPercent()}%"
+        }else{
+            binding.percent.text = "Loading..."
+        }
+        progressBar?.isIndeterminate = false
+        return binding.root
     }
+
+    private fun setupProgressBar() {
+        val progressBar = binding.circularProgressbar
+
+
+        binding.percent.text = "23%"
+        val progressValue = 20
+        progressBar.progress = progressValue
+    }
+
 
     companion object {
         /**

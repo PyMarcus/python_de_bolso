@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.OnClickListener
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pythondebolso.adapter.LearnTopicItemAdapter
@@ -22,7 +23,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [LearnTopicsFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class LearnTopicsFragment(var baseContext: Context) : Fragment() {
+class LearnTopicsFragment(var baseContext: Context) : Fragment(){
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -30,7 +31,13 @@ class LearnTopicsFragment(var baseContext: Context) : Fragment() {
     private lateinit var binding: FragmentLearnTopicsBinding
 
 
-    private var topics = listOf(arrayOf("Condicionais", "Permita que um programa tome decisões com base em condições específicas."))
+    private var topics = listOf(
+        arrayOf("Entrada e saída", "Interação entre um programa e seu ambiente."),
+        arrayOf("Condicionais", "Permita que um programa tome decisões com base em condições específicas."),
+        arrayOf("Loops", "Estruturas fundamentais que permitem a execução repetida de um bloco de código."),
+        arrayOf("Estruturas", "Elementos fundamentais para organizar e armazenar informações de maneira eficiente."),
+        arrayOf("Funções", "Blocos de código independentes que realizam uma tarefa específica.")
+    )
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +50,7 @@ class LearnTopicsFragment(var baseContext: Context) : Fragment() {
         binding.recycle.layoutManager = LinearLayoutManager(baseContext)
         adapter = LearnTopicItemAdapter(topics, baseContext)
         binding.recycle.adapter = adapter
+
     }
 
     override fun onCreateView(
@@ -51,11 +59,18 @@ class LearnTopicsFragment(var baseContext: Context) : Fragment() {
     ): View? {
         binding = FragmentLearnTopicsBinding.inflate(inflater, container, false)
 
-        topics = listOf(arrayOf("Condicionais", "Permita que um programa tome decisões com base em condições específicas."))
+        topics = listOf(
+            arrayOf("Entrada e saída", "Interação entre um programa e seu ambiente."),
+            arrayOf("Condicionais", "Permita que um programa tome decisões com base em condições específicas."),
+            arrayOf("Loops", "Estruturas fundamentais que permitem a execução repetida de um bloco de código."),
+            arrayOf("Estruturas", "Elementos fundamentais para organizar e armazenar informações de maneira eficiente."),
+            arrayOf("Funções", "Blocos de código independentes que realizam uma tarefa específica.")
+            )
         binding = FragmentLearnTopicsBinding.inflate(layoutInflater)
         binding.recycle.layoutManager = LinearLayoutManager(baseContext)
         adapter = LearnTopicItemAdapter(topics, baseContext)
         binding.recycle.adapter = adapter
+
         return binding.root
     }
 
@@ -78,4 +93,5 @@ class LearnTopicsFragment(var baseContext: Context) : Fragment() {
                 }
             }
     }
+
 }

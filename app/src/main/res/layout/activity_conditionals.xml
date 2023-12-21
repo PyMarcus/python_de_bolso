@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:ignore=".ConditionalsActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ConditionalsActivity">
+        <View
+            android:id="@+id/navbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/orange"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backbtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/navbar"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:tint="@color/white"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_conditionals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/conditionals_title"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:fontFamily="@font/bold"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp"
+            app:layout_constraintBottom_toBottomOf="@id/navbar"
+            />
+
+        <ImageView
+            android:id="@+id/image1"
+            app:layout_constraintTop_toTopOf="@id/navbar"
+            app:layout_constraintBottom_toBottomOf="@id/navbar"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_3"
+            tools:ignore="MissingConstraints" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textBase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/normal"
+            android:text="@string/conditionals_text"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/navbar" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_example"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintTop_toBottomOf="@id/textBase"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/conditionals_ex"
+                android:contentDescription="app logo"
+                tools:ignore="HardcodedText" />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/exp_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:layout_marginStart="4dp"
+            android:text="@string/exp"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:adjustViewBounds="true"
+            android:autoSizeStepGranularity="2sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_example" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/normal"
+            android:layout_marginStart="4dp"
+            android:text="A palavra reservada if, é o que, realmente, faz a condição.Se esse primeiro bloco não for atendido, cairá no elif, e fará uma nova condição.Se ainda não for atendida a condição, então, será executado o bloco else.Para o caso acima, atenderá ao if e resultará na primeira impressão."
+            android:textSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:adjustViewBounds="true"
+            android:autoSizeStepGranularity="2sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exp_txt" />
+
+        <ImageButton
+            android:id="@+id/btn_check"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/check"
+            app:layout_constraintTop_toBottomOf="@id/text"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/baseline_check_24"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

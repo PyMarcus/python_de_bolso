@@ -51,6 +51,51 @@
         programação, pois os programas frequentemente precisam interagir com o mundo externo
         para serem úteis.</string>
 
+    <!-- conditionals page -->
+    <string name="conditionals_title">Condicionais</string>
+    <string name="conditionals_text">No vasto universo da programação, as condicionais desempenham um papel crucial, guiando o comportamento do código com base em certas condições. Elas são como bifurcações em um caminho, permitindo que o programa tome decisões inteligentes.
+Imagine um programa como um assistente obediente, sempre pronto para agir. As condicionais são as instruções que dizem ao assistente o que fazer em diferentes situações. Se uma condição específica for atendida, o assistente seguirá um conjunto de instruções; caso contrário, ele seguirá por outro caminho.
+Vamos pensar em um exemplo simples. Suponha que você tenha uma lâmpada controlada por um interruptor. Se o interruptor estiver ligado, a lâmpada acende; se estiver desligado, a lâmpada permanece apagada. Aqui, o interruptor é a condição. Se a condição (interruptor ligado) for verdadeira, a ação correspondente (acender a lâmpada) é executada.
+Na linguagem de programação, isso pode ser traduzido para algo como:</string>
+
+    <!--loops page -->
+    <string name="loops_title">Loops</string>
+    <string name="loops_text">Na vasta paisagem da programação, os loops são como os motores que impulsionam a repetição de tarefas. Eles são os operários incansáveis que executam uma mesma instrução várias vezes, tornando possível automatizar processos e simplificar o código.
+Imagine que você precise saudar cada pessoa em uma sala. Em vez de escrever um código separado para cumprimentar cada pessoa, você pode usar um loop para repetir a ação de saudar até que todos tenham sido cumprimentados. Isso não só economiza tempo, mas também torna o código mais eficiente e fácil de entender.
+Existem dois tipos principais de loops: o "for" e o "while". O loop "for" é como um contador que sabe exatamente quantas vezes repetirá uma tarefa. Por exemplo, se quisermos contar até 5 em um programa, podemos usar um loop "for" da seguinte maneira em Python:</string>
+    <string name="loops_text2">
+        Este loop imprimirá os números de 1 a 5. O range(1, 6) especifica que o loop deve começar do número 1 e ir até o número 6 (mas não incluindo o 6).
+    O loop "while", por outro lado, repete uma tarefa enquanto uma condição específica for verdadeira. Vamos considerar o exemplo de contar até 5 novamente, desta vez usando um loop "while":
+    </string>
+
+    <string name="loops_text3">Aqui, o loop continuará executando enquanto a condição contador menor ou igual a  5 for verdadeira.
+    Os loops são ferramentas poderosas, mas é importante usá-los com cuidado para evitar loops infinitos, onde a condição nunca se torna falsa. Quando usados corretamente, os loops são aliados valiosos na automação de tarefas repetitivas, tornando a programação mais eficiente e dinâmica. Eles são como os motores de um carro, impulsionando o código adiante em direção a soluções mais inteligentes e ágeis.</string>
+
+
+    <!-- structures page -->
+    <string name="struct_title">Estruturas</string>
+    <string name="struct_text">Em Python, listas e dicionários são duas estruturas de dados fundamentais e amplamente utilizadas, cada uma com suas características e aplicações específicas.</string>
+    <string name="struct_list">
+Definição:  Uma lista em Python é uma sequência ordenada e mutável de elementos. Pode conter elementos de diferentes tipos, como números, strings e até mesmo outras listas.\n
+Sintaxe:  Declarada usando colchetes [], e os elementos são separados por vírgulas.</string>
+    <string name="struct_dict">
+Definição:  Um dicionário em Python é uma coleção não ordenada de pares chave-valor. Cada valor é associado a uma chave única, permitindo um acesso eficiente aos dados.\n
+Sintaxe:  Declarado usando chaves {}, e os pares chave-valor são separados por vírgulas.</string>
+
+
+    <!-- functions page-->
+    <string name="functions_title">Funções</string>
+    <string name="functions_text">
+        Em Python, funções são blocos de código reutilizáveis que realizam uma tarefa específica. Elas são definidas usando a palavra-chave def e podem ter parâmetros (entradas) e um valor de retorno.
+    </string>
+
+    <!--pratice page-->
+    <string name="pratice_title">Praticar</string>
+    <string name="question1">1) A saída será maior de idade?</string>
+    <string name="question2">2) Para acessar o último elemento, basta fazer: minha_lista[len(minha_lista)]?</string>
+    <string name="question3">3) A saída será maior de idade?</string>
+    <string name="question4">4) Um dicionário é composto de chaves e valores?</string>
+    <string name="question5">5) O loop abaixo imprimirá 0, 1, 2, 3, 4, 5?</string>
 
 
 

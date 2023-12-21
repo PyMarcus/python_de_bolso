@@ -8,8 +8,12 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pythondebolso.ConditionalsActivity
+import com.example.pythondebolso.FunctionsActivity
 import com.example.pythondebolso.IOActivity
+import com.example.pythondebolso.LoopsActivity
 import com.example.pythondebolso.R
+import com.example.pythondebolso.StructuresActivity
 import com.example.pythondebolso.databinding.LearnTopicItemBinding
 
 
@@ -95,13 +99,45 @@ class LearnTopicItemAdapter(var items: List<Array<String>>,var context: Context,
             }
         }
 
-        private fun conditionals(context: Context){}
+        private fun conditionals(context: Context){
+            try{
+               val conditionalsIntent = Intent(context, ConditionalsActivity::class.java)
+               conditionalsIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+               context.startActivity(conditionalsIntent)
+            }catch (e: Exception){
+                Log.e("LearnTopicItemAdapter", "Fail to open conditionals activity", e)
+            }
+        }
 
-        private fun loops(context: Context){}
+        private fun loops(context: Context){
+            try {
+                val loopsIntent = Intent(context, LoopsActivity::class.java)
+                loopsIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                context.startActivity(loopsIntent)
+            }catch (e: Exception){
+                Log.e("LearnTopicItemAdapter", "Fail to open loop activity", e)
+            }
+        }
 
 
-        private fun functions(context: Context){}
+        private fun functions(context: Context){
+            try {
+                val loopsIntent = Intent(context, FunctionsActivity::class.java)
+                loopsIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                context.startActivity(loopsIntent)
+            }catch (e: Exception){
+                Log.e("LearnTopicItemAdapter", "Fail to open functions activity", e)
+            }
+        }
 
-        private fun structures(context: Context){}
+        private fun structures(context: Context){
+            try {
+                val loopsIntent = Intent(context, StructuresActivity::class.java)
+                loopsIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                context.startActivity(loopsIntent)
+            }catch (e: Exception){
+                Log.e("LearnTopicItemAdapter", "Fail to open structures activity", e)
+            }
+        }
     }
 }

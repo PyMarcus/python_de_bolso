@@ -13,54 +13,45 @@ import android.view.View.OnClickListener
 import android.view.Window
 import android.widget.Button
 import com.example.pythondebolso.controllers.LearnPercentController
-import com.example.pythondebolso.databinding.ActivityIoactivityBinding
+import com.example.pythondebolso.databinding.ActivityConditionalsBinding
 import com.example.pythondebolso.models.LearnPercentEntity
 import com.google.android.material.textview.MaterialTextView
 
-class IOActivity : AppCompatActivity(), OnClickListener {
+class ConditionalsActivity : AppCompatActivity(), OnClickListener {
 
     private lateinit var profileController: LearnPercentController
-
+    private lateinit var binding: ActivityConditionalsBinding
     private val pythonKeyWords = listOf(
-    "False", "None", "True", "and", "as", "assert", "async", "await", "break",
-    "class", "continue", "def", "del", "elif", "else", "except", "finally", "for",
-    "from", "global", "if", "import", "lambda", "nonlocal", "not",
-   "pass", "raise", "return", "try", "while", "with", "yield", "Input", "Print"
+        "False", "None", "True", "and", "assert", "async", "await", "break",
+        "class", "continue", "def", "del", "elif", "else", "except", "finally",
+        "from", "global", "if", "import", "lambda", "nonlocal", "not",
+        "pass", "raise", "return", "try", "while", "with", "yield", "Input", "Print"
     )
-
-    private val text1 = "Input é uma função usada para receber dados do usuário durante a execução " +
-            "de um programa. Ela pausa a execução, aguarda a entrada do usuário e retorna a entrada " +
-            "como uma string."
-    private val text2 = "Print refere-se aos dados que um programa envia de volta ao ambiente " +
-            "externo. Pode ser exibido na tela, gravado em um arquivo, enviado pela rede, etc. " +
-            "A saída representa os resultados do processamento do programa."
-
-    private lateinit var binding: ActivityIoactivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityIoactivityBinding.inflate(layoutInflater)
-
-        setContentView(binding.root)
-
-        this.colorama()
+        this.binding = ActivityConditionalsBinding.inflate(layoutInflater)
+        setContentView(this.binding.root)
         profileController = LearnPercentController(baseContext)
-        this.handleClick()
+        this.handleEvents()
+        this.colorama()
     }
 
-    private fun handleClick(){
-        this.binding.backbtn.setOnClickListener(this)
+    private fun handleEvents(){
         this.binding.btnCheck.setOnClickListener(this)
+        this.binding.backbtn.setOnClickListener{
+            finish()
+        }
     }
 
     private fun colorama(){
-        val spannableString = SpannableString(text1)
-        val spannableString2 = SpannableString(text2)
+        val spannableString = SpannableString(this.binding
+            .text.text)
 
 
         for (word in pythonKeyWords) {
-            val start = text1.indexOf(word)
+            val start = this.binding.text.text.indexOf(word)
             val end = start + word.length
             if (start != -1) {
                 spannableString.setSpan(
@@ -74,20 +65,6 @@ class IOActivity : AppCompatActivity(), OnClickListener {
 
         this.binding.text.text = spannableString
 
-        for (word in pythonKeyWords) {
-            val start = text2.indexOf(word)
-            val end = start + word.length
-            if (start != -1) {
-                spannableString2.setSpan(
-                    ForegroundColorSpan(Color.BLUE),
-                    start,
-                    end,
-                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-                )
-            }
-        }
-
-        this.binding.text2.text = spannableString2
     }
 
     override fun onClick(v: View) {

@@ -3,7 +3,8 @@ A revolução Python agora cabe no seu bolso!
 
 
 
+https://github.com/PyMarcus/python_de_bolso/assets/88283829/abfba7e1-6980-4368-a7df-9fb3c60af997
 
-Uploading 2023-12-21 14-44-23 (online-video-cutter.com).mp4…
+
 
 
